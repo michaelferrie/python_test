@@ -1,0 +1,19 @@
+# Peano Arithmetic with a Function
+# Iteration & Successive Incrementing/Decrementing
+
+def sum(x,y):
+    if x == 0:
+        print ('the answer is', (y))
+    while x > 0:
+        x = x - 1
+        y = y + 1
+        print ("The value of x is now", (x))
+        print ("The value of y is now", (y))
+    print ("The sum of the two values is: ",(y))
+
+num1 = int(input("Enter first number:"))
+a = num1
+num2 = int(input("Enter second number:"))
+b = num2
+
+sum(a,b)
